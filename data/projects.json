@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Cozy Quarters",
+    "git": "https://github.com/magratacris/cozyquarters",
+    "live": "https://cozyquarters.vercel.app/",
+    "description": "",
+    "stack": ["React", "Nextjs", "Stripe", "Tailwind"],
+    "img": []
+  },
+  {
+    "name": "Todo list",
+    "git": "https://github.com/magratacris/todolist",
+    "live": "https://crism-todolist.vercel.app/",
+    "description": "",
+    "stack": ["React", "Redux", "Tailwind"],
+    "img": []
+  },
+  {
+    "name": "Portfolio",
+    "git": "https://github.com/magratacris/crismagrata.com",
+    "live": "https://crismagrata.com",
+    "description": "",
+    "stack": ["React", "Nextjs", "TypeScript", "Tailwind"],
+    "img": []
+  }
+]
