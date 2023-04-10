@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 const Header = () => {
   return (
-    <div className="flex  mx-auto max-w-[72rem] h-28 items-center justify-center px-4  ">
+    <div className="flex  mx-auto max-w-[72rem] h-28 items-center justify-center px-4 fixed top-0 left-[33%] ">
       {/* <div>CrisMagrata<Image alt={"logo"} /></div> */}
       <nav>
         <ul className="flex gap-5 items-center border-2 border-white rounded-full p-1">
@@ -23,9 +23,11 @@ const Header = () => {
               Projects
             </li>
           </Link>
-          <li className="cursor-pointer rounded-full hover:bg-gray-500 p-2 px-3 duration-500">
-            Contact
-          </li>
+          <Link to="contact" smooth={true}>
+            <li className="cursor-pointer rounded-full hover:bg-gray-500 p-2 px-3 duration-500">
+              Contact
+            </li>
+          </Link>
           <li className="text-lg ml-3 cursor-pointer ">
             <span>
               <BsLinkedin className="hover:text-[#0073B2] duration-500" />

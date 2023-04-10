@@ -2,7 +2,7 @@ import React from "react";
 
 const Overview = () => {
   return (
-    <div className="max-w-[72rem] mx-auto h-[30rem] flex gap-3 items-center px-4 py-24 border-x-2 border-white">
+    <div className="max-w-[72rem] mx-auto h-[30rem] flex gap-3 items-center px-4 py-24 ">
       <div className=" flex-1 flex items-center justify-center">
         <h1 className="text-5xl w-72">A quick overview</h1>
       </div>

@@ -11,10 +11,10 @@ const About = () => {
   return (
     <div
       id="about"
-      className="max-w-[72rem] mx-auto h-screen  flex gap-4 py-32 px-32 border-x-2 border-white"
+      className="max-w-[72rem] mx-auto h-screen  flex gap-4 py-32 px-32"
     >
-      <div className="flex-1">
-        <div className="w-[80%]">
+      <div className="flex-1 flex justify-center items-center">
+        <div className="w-[90%] ">
           <h1 className="text-5xl my-4">About me</h1>
           <p className="indent-6 mb-4 text-sm">
             I am passionate about learning and creating innovative solutions

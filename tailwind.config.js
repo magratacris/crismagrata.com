@@ -22,6 +22,7 @@ module.exports = {
       },
       animation: {
         "wave-animation": "wave-animation 1s linear infinite",
+        gradient: "textShine 3s ease-in-out infinite alternate",
       },
       keyframes: {
         "wave-animation": {
@@ -33,6 +34,14 @@ module.exports = {
           "50%": { transform: "rotate(10.0deg)" },
           "60%": { transform: "rotate( 0.0deg)" },
           "100% ": { transform: "rotate( 0.0deg)" },
+        },
+        textShine: {
+          "0%": {
+            "background-position": "0% 50%",
+          },
+          "100%": {
+            "background-position": "100% 50%",
+          },
         },
       },
       transformOrigin: {

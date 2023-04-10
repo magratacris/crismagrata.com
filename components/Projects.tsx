@@ -4,7 +4,7 @@ import { VscLink } from "react-icons/vsc";
 import Swiper from "swiper";
 const Projects = () => {
   return (
-    <div id="projects" className="max-w-[72rem] mx-auto h-screen py-16 px-4">
+    <div id="projects" className="max-w-[72rem] mx-auto h-screen py-28 px-4">
       <h1 className="text-5xl">Some Things I've Built</h1>
       <p className="my-4">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci id ut
