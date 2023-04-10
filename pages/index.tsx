@@ -11,8 +11,8 @@ export default function Home() {
       {/* <ParticlesBackground /> */}
       <Header />
       <Hero />
-      <About />
       <Overview />
+      <About />
       <Projects />
     </>
   );

@@ -1,26 +1,81 @@
 import Image from "next/image";
 import React from "react";
-
+import {
+  SiJavascript,
+  SiTypescript,
+  SiReact,
+  SiTailwindcss,
+} from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
 const About = () => {
   return (
-    <div className="max-w-[72rem] mx-auto h-screen px-4 flex gap-4 py-32">
+    <div
+      id="about"
+      className="max-w-[72rem] mx-auto h-screen  flex gap-4 py-32 px-32 border-x-2 border-white"
+    >
       <div className="flex-1">
-        <h1 className="text-6xl">About me</h1>
-        <p className="indent-6">
-          I am passionate about learning and creating innovative solutions that
-          have a positive impact. My expertise lies in designing and developing
-          high-quality products that solve complex problems. I enjoy
-          collaborating with teams in fast-paced environments to continuously
-          deliver and iterate on projects. My effective communication and
-          critical thinking skills allow me to contribute to projects in a
-          meaningful way, and I am always eager to learn and grow alongside my
-          colleagues. When I'm not working, I enjoy staying active by going to
-          the gym, reading, traveling, and exploring the great outdoors. Let's
-          work together to build something amazing!
-        </p>
+        <div className="w-[80%]">
+          <h1 className="text-5xl my-4">About me</h1>
+          <p className="indent-6 mb-4 text-sm">
+            I am passionate about learning and creating innovative solutions
+            that have a positive impact. My expertise lies in designing and
+            developing high-quality products that solve complex problems. I
+            enjoy collaborating with teams in fast-paced environments to
+            continuously deliver and iterate on projects.
+          </p>
+          <p className="indent-6 text-sm mb-4">
+            My effective communication and critical thinking skills allow me to
+            contribute to projects in a meaningful way, and I am always eager to
+            learn and grow alongside my colleagues. Let's work together to build
+            something amazing!
+          </p>
+          <p className="text-sm mb-2">
+            The main area of my expertise are front-end like:
+          </p>
+          <div className="grid grid-cols-2 grid-rows-3 gap-3">
+            <div className="flex items-center">
+              <div className="text-yellow-500 mr-2">
+                <SiJavascript />
+              </div>
+              <span>JavaScript</span>
+            </div>
+            <div className="flex items-center">
+              <div className="text-blue-500 mr-2">
+                <SiTypescript />
+              </div>
+              <span>TypeScript</span>
+            </div>
+            <div className="flex items-center">
+              <div className="text-blue-400 mr-2">
+                <SiReact />
+              </div>
+              <span>React</span>
+            </div>
+            <div className="flex items-center">
+              <div className="mr-2">
+                <TbBrandNextjs />
+              </div>
+              <span>Next.js</span>
+            </div>
+            <div className="flex items-center">
+              <div className="text-[#38BDF8] mr-2">
+                <SiTailwindcss />
+              </div>
+              <span>Tailwind CSS</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="flex-1">
-        <Image src="/images/yeji.jpg" width={450} height={450} alt="" />
+      <div className="flex-1 flex items-center justify-center">
+        <div className="border-2 rounded-xl">
+          <Image
+            src="/images/about.png"
+            width={421}
+            height={421}
+            alt=""
+            className="h-52 w-52"
+          />
+        </div>
       </div>
     </div>
   );
