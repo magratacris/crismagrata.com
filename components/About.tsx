@@ -7,27 +7,33 @@ import {
   SiTailwindcss,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
+import { useAppContext } from "@/context/StateContext";
 const About = () => {
+  const { sectionRefs } = useAppContext();
   return (
     <div
+      ref={sectionRefs.about}
       id="about"
-      className="max-w-[72rem] mx-auto h-screen  flex gap-4 py-32 px-32"
+      className="max-w-[72rem] mx-auto h-screen  flex gap-4 py-10 px-32"
     >
       <div className="flex-1 flex justify-center items-center">
         <div className="w-[90%] ">
           <h1 className="text-5xl my-4">About me</h1>
           <p className="indent-6 mb-4 text-sm">
+            <span className="gradientMain animate-gradient">
+              Hi! I'm Cris! A React front-end developer and designer.
+            </span>{" "}
             I am passionate about learning and creating innovative solutions
             that have a positive impact. My expertise lies in designing and
-            developing high-quality products that solve complex problems. I
-            enjoy collaborating with teams in fast-paced environments to
-            continuously deliver and iterate on projects.
+            developing high-quality products that solve complex problems.
           </p>
           <p className="indent-6 text-sm mb-4">
-            My effective communication and critical thinking skills allow me to
-            contribute to projects in a meaningful way, and I am always eager to
-            learn and grow alongside my colleagues. Let's work together to build
-            something amazing!
+            My effective communication and critical thinking skills will allow
+            me to contribute to projects in a meaningful way, and I am always
+            eager to learn and grow alongside my colleagues.{" "}
+            <span className="gradientMain animate-gradient">
+              Let's work together to build something amazing!
+            </span>
           </p>
           <p className="text-sm mb-2">
             The main area of my expertise are front-end like:
@@ -67,7 +73,7 @@ const About = () => {
         </div>
       </div>
       <div className="flex-1 flex items-center justify-center">
-        <div className="border-2 rounded-xl">
+        <div className="border-2 rounded-xl ">
           <Image
             src="/images/about.png"
             width={421}
