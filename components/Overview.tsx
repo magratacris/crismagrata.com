@@ -6,9 +6,9 @@ import { BsArrowUpRight } from "react-icons/bs";
 
 const Overview = () => {
   return (
-    <div className="max-w-[72rem] mx-auto h-[25rem] flex gap-5 lg:gap-3 items-center px-4 lg:py-18 lg:flex-row flex-col ">
+    <div className="max-w-[72rem] mx-auto h-[35rem] flex gap-28 lg:gap-3 items-center px-4 lg:py-18 lg:flex-row flex-col ">
       <div className="flex  items-center justify-center lg:flex-1">
-        <h1 className="lg:text-5xl max-w-72 text-2xl sm:text-3xl sm:mb-10">
+        <h1 className="lg:text-5xl max-w-72 text-3xl  sm:mb-10">
           A quick overview
         </h1>
       </div>

@@ -83,7 +83,7 @@ const Header = () => {
     <div className="2xl:fixed top-0 w-full z-20">
       <div className="flex  mx-auto max-w-[72rem] h-28 xl:max-2xl:h-20  items-center justify-center px-4">
         <nav>
-          <ul className="flex lg:gap-2 items-center justify-center border-2 border-white dark:border-black rounded-full xl:max-2xl:p-3 p-1 xl:p-1 dark:bg-white  bg-black duration-500 text-xs xl:text-base">
+          <ul className="flex lg:gap-2 items-center justify-center border-2 border-white dark:border-black rounded-full xl:max-2xl:p-3 p-2 xl:p-1 dark:bg-white  bg-black duration-500 text-xs xl:text-base">
             <Link to="home" smooth={true} className="hidden 2xl:block">
               <div
                 className={`${
