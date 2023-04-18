@@ -144,7 +144,7 @@ const Header = () => {
                 <DarkModeSwitch
                   checked={isDarkMode}
                   onChange={toggleDarkMode}
-                  size={25}
+                  size={20}
                   moonColor="white"
                   sunColor="black"
                 />

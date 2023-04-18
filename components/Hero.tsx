@@ -24,7 +24,7 @@ const Hero = () => {
               👋
             </span>
           </h3>
-          <h1 className="text-2xl sm:text-3xl sm:w-[24rem] md:text-4xl lg:text-5xl mt-10 lg:w-[34rem] text-center  font-bold animate-gradient gradientMain 3xl:mt-14 px-2 xl:max-2xl:text-4xl xl:max-2xl:w-[28rem]">
+          <h1 className="text-3xl sm:w-[24rem] md:text-4xl lg:text-5xl mt-10 lg:w-[34rem] text-center  font-bold animate-gradient gradientMain 3xl:mt-14 px-2 xl:max-2xl:text-4xl xl:max-2xl:w-[28rem]">
             Crafting innovative digital experiences and brands
           </h1>
         </div>
