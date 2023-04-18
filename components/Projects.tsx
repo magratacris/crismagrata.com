@@ -14,7 +14,7 @@ const Projects: NextPage<ProjectProps> = ({ data }) => {
     <div
       id="projects"
       ref={sectionRefs.projects}
-      className="max-w-[72rem] mx-auto min-h-screen 2xl:pt-28 px-4 sm:pt-14"
+      className="max-w-[72rem] mx-auto max-h-[90rem] 2xl:pt-28 px-4 sm:pt-14"
     >
       <h1 className="text-4xl px-1">Some Things I've Built</h1>
       <p className="my-4 text-xs md:text-sm px-1 indent-6">
@@ -23,9 +23,9 @@ const Projects: NextPage<ProjectProps> = ({ data }) => {
         websites and web applications from scratch, using my coding skills to
         bring my ideas to life.
       </p>
-      <div className="flex flex-col gap-4 xl:flex-row">
-        {data.map((item) => (
-          <ProjectsCard key={item.name} projects={item} />
+      <div className="grid grid-cols-3 grid-rows-3 gap-4 flex-wrap">
+        {data.map((item, index) => (
+          <ProjectsCard key={item.name} projects={item} index={index} />
         ))}
       </div>
     </div>

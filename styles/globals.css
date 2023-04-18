@@ -30,8 +30,18 @@ body {
   -webkit-text-fill-color: transparent;
   background-size: 500% auto;
 }
+
+.grid-item-0 {
+  @apply row-start-1 col-start-1 col-span-2;
+}
+.grid-item-1 {
+  @apply row-start-2 col-start-2 col-span-3;
+}
+.grid-item-2 {
+  @apply row-start-3 col-start-1 col-span-2;
+}
+
 @layer base {
-  /* scrollbar design */
   ::-webkit-scrollbar {
     width: 10px;
   }

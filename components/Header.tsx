@@ -65,7 +65,7 @@ const Header = () => {
       {
         root: null,
         rootMargin: "-150px", // adjust as needed
-        threshold: 0.5, // adjust as needed
+        threshold: 0.3, // adjust as needed
       }
     );
     Object.values(sectionRefs).forEach((ref) => {
