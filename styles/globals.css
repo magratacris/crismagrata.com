@@ -32,13 +32,13 @@ body {
 }
 
 .grid-item-0 {
-  @apply row-start-1 col-start-1 col-span-2;
+  @apply xl:row-start-1 xl:col-start-1 xl:col-span-2;
 }
 .grid-item-1 {
-  @apply row-start-2 col-start-2 col-span-3;
+  @apply xl:row-start-2 md:max-lg:col-start-2 xl:col-start-2 xl:col-span-3;
 }
 .grid-item-2 {
-  @apply row-start-3 col-start-1 col-span-2;
+  @apply xl:row-start-3 xl:col-start-1 xl:col-span-2;
 }
 
 @layer base {

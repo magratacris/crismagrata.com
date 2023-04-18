@@ -83,7 +83,7 @@ const Header = () => {
     <div className="2xl:fixed top-0 w-full z-20">
       <div className="flex  mx-auto max-w-[72rem] h-28 xl:max-2xl:h-20  items-center justify-center px-4">
         <nav>
-          <ul className="flex lg:gap-2 items-center justify-center border-2 border-white dark:border-black rounded-full xl:max-2xl:p-3 p-2 xl:p-1 dark:bg-white  bg-black duration-500 text-xs xl:text-base">
+          <ul className="flex lg:gap-2 items-center justify-center border-2 border-white dark:border-black rounded-full xl:max-2xl:p-3 p-1 xl:p-1 dark:bg-white  bg-black duration-500 text-xs xl:text-base">
             <Link to="home" smooth={true} className="hidden 2xl:block">
               <div
                 className={`${
@@ -127,7 +127,7 @@ const Header = () => {
                 href="https://www.linkedin.com/in/crismagrata/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[#0073B2] duration-500 text-lg  cursor-pointer "
+                className="hover:text-[#0073B2] duration-500 text-lg p-1 cursor-pointer "
               >
                 <BsLinkedin />
               </a>
@@ -136,11 +136,11 @@ const Header = () => {
                 href="https://github.com/magratacris"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-gray-500 duration-500 cursor-pointer text-lg  "
+                className="hover:text-gray-500 p-1 duration-500 cursor-pointer text-lg  "
               >
                 <BsGithub />
               </a>
-              <div onClick={handleThemeSwitch}>
+              <div onClick={handleThemeSwitch} className="p-1">
                 <DarkModeSwitch
                   checked={isDarkMode}
                   onChange={toggleDarkMode}
