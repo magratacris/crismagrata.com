@@ -1,5 +1,7 @@
 import Image from "next/image";
-import React from "react";
+//react-context
+import { useAppContext } from "@/context/StateContext";
+//react-icons
 import {
   SiJavascript,
   SiTypescript,
@@ -7,7 +9,7 @@ import {
   SiTailwindcss,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
-import { useAppContext } from "@/context/StateContext";
+
 const About = () => {
   const { sectionRefs } = useAppContext();
   return (

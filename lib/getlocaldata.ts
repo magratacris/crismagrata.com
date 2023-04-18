@@ -1,5 +1,6 @@
 import fsPromises from "fs/promises";
 import path from "path";
+//types
 import { IProps } from "@/Interfaces/Projects";
 
 export async function getLocalData() {

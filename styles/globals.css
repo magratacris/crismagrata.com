@@ -16,8 +16,6 @@ body {
 
   color: white;
   color: black;
-  /* color: black; */
-  /* background-color: #f8f8f8; */
 }
 .gradientMain {
   background: linear-gradient(
@@ -31,4 +29,18 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 500% auto;
+}
+@layer base {
+  /* scrollbar design */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: gray;
+    border-radius: 50vw;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50vw;
+  }
 }

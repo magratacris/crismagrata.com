@@ -1,6 +1,8 @@
-import React from "react";
-import Image from "next/image";
+//react-context
 import { useAppContext } from "@/context/StateContext";
+//next
+import Image from "next/image";
+
 const Contact = () => {
   const { sectionRefs } = useAppContext();
 
@@ -8,7 +10,7 @@ const Contact = () => {
     <div
       id="contact"
       ref={sectionRefs.contact}
-      className="max-w-[72rem] mx-auto h-screen xl:max-2xl:pt-14 pt-24 sm:pt-36 3xl:pt-48 2xl:px-28 flex flex-col justify-between"
+      className="max-w-[72rem] mx-auto h-screen xl:max-2xl:pt-14 pt-24 sm:pt-36 3xl:pt-48 2xl:px-28 flex flex-col justify-between px-4"
     >
       <div className="flex flex-col gap-4 items-center">
         <div className="lg:flex-1 text-center">

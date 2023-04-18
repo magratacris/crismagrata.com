@@ -1,8 +1,10 @@
-import React from "react";
-
-import { useAppContext } from "@/context/StateContext";
-import { ProjectProps, IProps } from "@/Interfaces/Projects";
+//next
 import { NextPage } from "next";
+//react-context
+import { useAppContext } from "@/context/StateContext";
+//types
+import { ProjectProps } from "@/Interfaces/Projects";
+//components
 import ProjectsCard from "./UI/ProjectsCard";
 
 const Projects: NextPage<ProjectProps> = ({ data }) => {

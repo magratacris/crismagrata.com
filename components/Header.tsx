@@ -6,6 +6,7 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { Link } from "react-scroll";
 //react-toggle-dark-mode
 import { DarkModeSwitch } from "react-toggle-dark-mode";
+
 const Header = () => {
   const [activeLink, setActiveLink] = useState<
     "home" | "about" | "contact" | "projects"

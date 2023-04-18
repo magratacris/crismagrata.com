@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 //react-icons
 import { BsArrowUpRight } from "react-icons/bs";
+
 const Overview = () => {
   return (
     <div className="max-w-[72rem] mx-auto h-[25rem] flex gap-5 lg:gap-3 items-center px-4 lg:py-18 lg:flex-row flex-col ">

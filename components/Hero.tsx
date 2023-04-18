@@ -1,6 +1,8 @@
-import React from "react";
+//next
 import Image from "next/image";
+//react-context
 import { useAppContext } from "@/context/StateContext";
+
 const Hero = () => {
   const { sectionRefs } = useAppContext();
   return (

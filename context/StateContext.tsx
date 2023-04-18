@@ -1,13 +1,6 @@
-import React, {
-  createContext,
-  useContext,
-  useState,
-  useRef,
-  FC,
-  ReactNode,
-} from "react";
+import React, { createContext, useContext, useState, useRef, FC } from "react";
 //types
-import { AppContextProps, ContextType } from "@/types/AppContext";
+import { AppContextProps, ContextType } from "@/Interfaces/AppContext";
 
 const Context = createContext<ContextType>({} as ContextType);
 export const useAppContext = () => useContext(Context);
