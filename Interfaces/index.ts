@@ -1,0 +1,1 @@
+import { IProps } from "./Projects";

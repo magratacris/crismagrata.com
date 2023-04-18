@@ -1,102 +1,30 @@
 import React from "react";
-import { BsGithub } from "react-icons/bs";
-import { VscLink } from "react-icons/vsc";
-import Swiper from "swiper";
+
 import { useAppContext } from "@/context/StateContext";
-const Projects = () => {
+import { ProjectProps, IProps } from "@/Interfaces/Projects";
+import { NextPage } from "next";
+import ProjectsCard from "./UI/ProjectsCard";
+
+const Projects: NextPage<ProjectProps> = ({ data }) => {
   const { sectionRefs } = useAppContext();
 
   return (
     <div
       id="projects"
       ref={sectionRefs.projects}
-      className="max-w-[72rem] mx-auto h-screen py-28 px-4"
+      className="max-w-[72rem] mx-auto min-h-screen 2xl:pt-28 px-4 sm:pt-14"
     >
-      <h1 className="text-5xl">Some Things I've Built</h1>
-      <p className="my-4">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci id ut
-        explicabo eligendi delectus ad dignissimos aspernatur dolore iste harum
-        totam corrupti modi tempore, ex eos maiores atque corporis praesentium!
+      <h1 className="text-4xl px-1">Some Things I've Built</h1>
+      <p className="my-4 text-xs md:text-sm px-1 indent-6">
+        As a web developer, I believe that the best way to master the craft is
+        through hands-on experience. That's why I'm passionate about building
+        websites and web applications from scratch, using my coding skills to
+        bring my ideas to life.
       </p>
-      <div className="flex ">
-        <div className="flex flex-col w-[24rem] min-h-[9rem] bg-transparent shadow-sm p-2 rounded-2xl h-auto ">
-          <div className="">
-            <img
-              src="/images/ny.jpg"
-              alt=""
-              className="w-full h-full rounded-xl"
-            />
-          </div>
-          <h3 className="py-3">"Cozy Quarters" - Ecommerce App</h3>
-          <p className="text-xs">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-            fugiat temporibus excepturi nostrum quibusdam quos, explicabo hic
-            provident. At doloremque a numquam odio voluptatem exercitationem
-            ut, quidem nobis perferendis repudiandae!
-          </p>
-          <div
-            className="my-2 text-sm
-          "
-          >
-            React, Next.js, Stripe, Tailwind
-          </div>
-          <div className="flex gap-3 text-2xl items-center">
-            <BsGithub />
-            <VscLink />
-          </div>
-        </div>
-        <div className="flex flex-col w-[24rem] min-h-[9rem] bg-transparent shadow-sm p-2 rounded-2xl h-auto ">
-          <div className="">
-            <img
-              src="/images/ny.jpg"
-              alt=""
-              className="w-full h-full rounded-xl"
-            />
-          </div>
-          <h3 className="py-3">ToDo List App </h3>
-          <p className="text-xs">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-            fugiat temporibus excepturi nostrum quibusdam quos, explicabo hic
-            provident. At doloremque a numquam odio voluptatem exercitationem
-            ut, quidem nobis perferendis repudiandae!
-          </p>
-          <div
-            className="my-2 text-sm
-          "
-          >
-            React, Redux, Tailwind
-          </div>
-          <div className="flex gap-3 text-2xl items-center">
-            <BsGithub />
-            <VscLink />
-          </div>
-        </div>
-        <div className="flex flex-col w-[24rem] min-h-[9rem] bg-transparent shadow-sm p-2 rounded-2xl h-auto ">
-          <div className="">
-            <img
-              src="/images/ny.jpg"
-              alt=""
-              className="w-full h-full rounded-xl"
-            />
-          </div>
-          <h3 className="py-3">Portfolio</h3>
-          <p className="text-xs">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-            fugiat temporibus excepturi nostrum quibusdam quos, explicabo hic
-            provident. At doloremque a numquam odio voluptatem exercitationem
-            ut, quidem nobis perferendis repudiandae!
-          </p>
-          <div
-            className="my-2 text-sm
-          "
-          >
-            React, TypeScript, Next.js, Tailwind
-          </div>
-          <div className="flex gap-3 text-2xl items-center">
-            <BsGithub />
-            <VscLink />
-          </div>
-        </div>
+      <div className="flex flex-col gap-4 xl:flex-row">
+        {data.map((item) => (
+          <ProjectsCard key={item.name} projects={item} />
+        ))}
       </div>
     </div>
   );

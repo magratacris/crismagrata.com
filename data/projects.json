@@ -1,26 +1,26 @@
 [
   {
-    "name": "Cozy Quarters",
+    "name": "Cozy Quarters - Ecommerce App",
     "git": "https://github.com/magratacris/cozyquarters",
     "live": "https://cozyquarters.vercel.app/",
-    "description": "",
-    "stack": ["React", "Nextjs", "Stripe", "Tailwind"],
-    "img": []
+    "desc": "This is a fully functional e-commerce website that offers a wide selection of home decor and furniture products, from beds and mattresses to kitchenware and decorative accessories. The website features a modern and minimalist design that makes it easy for customers to navigate and shop hassle-free. With the ability to filter products by category and add items to your cart with just a few clicks, the website also includes a payment system using Stripe, ensuring a secure and seamless checkout process for customers. You can try it out!",
+    "stack": "React, Nextjs, Stripe, Tailwind",
+    "videoSrc": "https://drive.google.com/uc?export=download&id=1edUvloka-_ssOP08jK5YO03A6mlO0lSJ"
   },
   {
-    "name": "Todo list",
+    "name": "ToDo list",
     "git": "https://github.com/magratacris/todolist",
     "live": "https://crism-todolist.vercel.app/",
-    "description": "",
-    "stack": ["React", "Redux", "Tailwind"],
-    "img": []
+    "desc": "Looking for a sleek and simple way to stay organized and on top of your tasks? Look no further than my To Do List app! Built using React and Tailwind CSS, and powered by Redux Toolkit for smooth and seamless state management, this app is the perfect solution for anyone who wants to stay on track and get things done. It\u0027s a simple app! you can create and delete items on your to-do list with ease, with a clean and intuitive user interface.",
+    "stack": "React, Redux, Tailwind",
+    "videoSrc": "https://drive.google.com/uc?export=download&id=1UuhDfVg9dfEMYB8dwW8IKSnN9UWV3QaL"
   },
   {
     "name": "Portfolio",
     "git": "https://github.com/magratacris/crismagrata.com",
     "live": "https://crismagrata.com",
-    "description": "",
-    "stack": ["React", "Nextjs", "TypeScript", "Tailwind"],
-    "img": []
+    "desc": "My portfolio is a modern and stylish website that showcases my skills in design and creation. It features a striking color scheme with bold gradients and high contrast, making it both eye-catching and professional. The site creates a visually engaging experience for my visitors and includes my other works as well. My goal is to leave a lasting impression on anyone who visits.",
+    "stack": "React, Nextjs, TypeScript, Tailwind",
+    "videoSrc": "https://drive.google.com/uc?export=download&id=1JiWFmJ7j_VFRgSd85nibeZpmlx-cKywC"
   }
 ]

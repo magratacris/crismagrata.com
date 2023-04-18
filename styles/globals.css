@@ -12,8 +12,10 @@ html,
 body {
   font-family: Poppins;
   background-color: black;
-  color: #7a7a7a;
+  background-color: white;
+
   color: white;
+  color: black;
   /* color: black; */
   /* background-color: #f8f8f8; */
 }

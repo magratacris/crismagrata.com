@@ -1,45 +1,68 @@
 import React from "react";
 //next
 import Image from "next/image";
+//react-icons
+import { BsArrowUpRight } from "react-icons/bs";
 const Overview = () => {
   return (
-    <div className="max-w-[72rem] mx-auto h-[30rem] flex gap-3 items-center px-4 py-24 ">
-      <div className=" flex-1 flex items-center justify-center">
-        <h1 className="text-5xl w-72">A quick overview</h1>
+    <div className="max-w-[72rem] mx-auto h-[25rem] flex gap-5 lg:gap-3 items-center px-4 lg:py-18 lg:flex-row flex-col ">
+      <div className="flex  items-center justify-center lg:flex-1">
+        <h1 className="lg:text-5xl max-w-72 text-2xl sm:text-3xl sm:mb-10">
+          A quick overview
+        </h1>
       </div>
 
-      <div className="flex-1 flex flex-col gap-4 justify-center items-center">
-        <div className="flex gap-4 items-center">
-          <div className="border-2 border-white p-5 rounded-2xl">
+      <div className=" flex flex-col gap-4 justify-center items-center lg:flex-1">
+        <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 items-center w-full">
+          <div className="border-2   p-2 lg:p-5 rounded-2xl">
             <Image
               src="/images/overview-grad.png"
               alt=""
               width={512}
               height={512}
-              className="h-16 w-16"
+              className="h-11 w-11 sm:h- sm:h-16 sm:w-16"
             />
           </div>
-          <div className="w-80">
-            <h1 className="text-xl">BS Computer Engineering</h1>
-            <p className="text-sm text-gray-500"> August 2022</p>
+          <div className="lg:w-80">
+            <h1 className="lg:text-xl text-xs">BS Computer Engineering</h1>
+            <p className="text-xs text-gray-500 text-center sm:text-start">
+              {" "}
+              August 2022
+            </p>
           </div>
         </div>
-        <div className="flex gap-4 items-center">
-          <div className="border-2 border-white p-5 rounded-2xl">
+
+        <div className="flex gap-2 sm:gap-4 items-center flex-col sm:flex-row w-full">
+          <div className="border-2  p-2 lg:p-5 rounded-2xl">
             {" "}
             <Image
               src="/images/overview-courses.png"
               alt=""
               width={512}
               height={512}
-              className="h-16 w-16"
+              className="h-11 w-11 sm:h-16 sm:w-16"
             />
           </div>
-          <div className="w-80">
-            <h1 className="text-xl">Online Courses</h1>
-            <p className="text-sm text-gray-500">
-              Completed 3 courses with a total of 100 hours of learning
+          <div className="lg:w-80">
+            <h1 className="lg:text-xl text-xs text-center sm:text-start">
+              Certifications
+            </h1>
+            <p className="text-xs text-gray-500 text-center sm:text-start sm:w-56">
+              Microsoft-certified IT Specialist in HTML and CSS and have
+              completed a total of 100-hour certifications in React, Next.js,
+              and Tailwind.
             </p>
+            <a
+              href="https://www.linkedin.com/in/crismagrata/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs mt-4 flex items-center sm:justify-start gap-2 justify-center hover:underline duration-500"
+            >
+              More on my LinkedIn profile{" "}
+              <span className="inline-block">
+                <BsArrowUpRight />
+              </span>
+            </a>
           </div>
         </div>
       </div>

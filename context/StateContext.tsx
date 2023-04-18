@@ -19,7 +19,11 @@ export const AppContext: FC<AppContextProps> = ({ children }) => {
     projects: useRef<HTMLDivElement>(null),
     contact: useRef<HTMLDivElement>(null),
   });
+  const [isDarkMode, setDarkMode] = useState(true);
+  const toggleDarkMode = (checked: boolean) => {
+    setDarkMode(checked);
+  };
 
-  const value = { sectionRefs };
+  const value = { sectionRefs, isDarkMode, setDarkMode, toggleDarkMode };
   return <Context.Provider value={value}>{children}</Context.Provider>;
 };

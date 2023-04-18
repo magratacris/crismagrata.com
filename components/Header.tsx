@@ -3,15 +3,28 @@ import { useState, useEffect } from "react";
 import { useAppContext } from "@/context/StateContext";
 //react-icons
 import { BsLinkedin, BsGithub } from "react-icons/bs";
-import { IoDocumentAttachOutline } from "react-icons/io5";
 import { Link } from "react-scroll";
-
+//react-toggle-dark-mode
+import { DarkModeSwitch } from "react-toggle-dark-mode";
 const Header = () => {
   const [activeLink, setActiveLink] = useState<
     "home" | "about" | "contact" | "projects"
   >("home");
   const [backgroundColor, setBackgroundColor] = useState("");
-  const { sectionRefs } = useAppContext();
+  const { sectionRefs, isDarkMode, toggleDarkMode } = useAppContext();
+  const [theme, setTheme] = useState<String | null>(null);
+  const handleThemeSwitch = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [theme]);
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -22,16 +35,24 @@ const Header = () => {
             );
             switch (entry.target.id) {
               case "home":
-                setBackgroundColor("bg-white text-black");
+                setBackgroundColor(
+                  "bg-white text-black dark:bg-black dark:text-white dark:border-black"
+                );
                 break;
               case "about":
-                setBackgroundColor("bg-white text-black");
+                setBackgroundColor(
+                  "bg-white text-black dark:bg-black dark:text-white dark:border-black"
+                );
                 break;
               case "contact":
-                setBackgroundColor("bg-white text-black");
+                setBackgroundColor(
+                  "bg-white text-black dark:bg-black dark:text-white dark:border-black"
+                );
                 break;
               case "projects":
-                setBackgroundColor("bg-white text-black");
+                setBackgroundColor(
+                  "bg-white text-black dark:bg-black dark:text-white dark:border-black"
+                );
                 break;
               default:
                 setBackgroundColor("");
@@ -57,83 +78,55 @@ const Header = () => {
     };
   }, [sectionRefs]);
 
-  //added border color white when clicked
-  // const handleLinkClick = (
-  //   linkId: "home" | "about" | "contact" | "projects"
-  // ): void => {
-  //   setActiveLink(linkId);
-  //   switch (linkId) {
-  //     case "home":
-  //       setBackgroundColor("border-white");
-  //       break;
-  //     case "about":
-  //       setBackgroundColor("border-white");
-
-  //       break;
-  //     case "contact":
-  //       setBackgroundColor("border-white");
-  //       break;
-  //     case "projects":
-  //       setBackgroundColor("border-white");
-  //       break;
-  //     default:
-  //       setBackgroundColor("");
-  //       break;
-  //   }
-  // };
   return (
-    <div className="fixed top-0 w-full">
-      <div className="flex  mx-auto max-w-[72rem] h-28 items-center justify-center px-4">
+    <div className="2xl:fixed top-0 w-full z-20">
+      <div className="flex  mx-auto max-w-[72rem] h-28 xl:max-2xl:h-20  items-center justify-center px-4">
         <nav>
-          <ul className="flex gap-2 items-center border-2 border-white rounded-full p-1 bg-black ">
-            <Link to="home" smooth={true}>
-              <li
-                // onClick={() => handleLinkClick("home")}
+          <ul className="flex lg:gap-2 items-center justify-center border-2 border-white dark:border-black rounded-full xl:max-2xl:p-3 p-2 xl:p-1 dark:bg-white  bg-black duration-500 text-xs xl:text-base">
+            <Link to="home" smooth={true} className="hidden 2xl:block">
+              <div
                 className={`${
                   activeLink === "home" ? backgroundColor : ""
-                } cursor-pointer rounded-full  p-2 px-3 duration-500 border-2 border-transparent hover:border-white`}
+                } cursor-pointer rounded-full  lg:p-2 lg:px-3 duration-500  border-2 border-black dark:border-white dark:hover:border-black hover:border-white p-1 px-2  `}
               >
                 Home
-              </li>
+              </div>
             </Link>
-            <Link to="about" smooth={true}>
+            <Link to="about" smooth={true} className="hidden 2xl:block">
               <li
-                // onClick={() => handleLinkClick("about")}
                 className={`${
                   activeLink === "about" ? backgroundColor : ""
-                } cursor-pointer rounded-full  p-2 px-3 duration-500  border-2 border-black hover:border-white`}
+                } cursor-pointer rounded-full  lg:p-2 lg:px-3 duration-500  border-2 border-black dark:border-white dark:hover:border-black hover:border-white p-1 px-2 `}
               >
                 About
               </li>
             </Link>
 
-            <Link to="projects" smooth={true}>
+            <Link to="projects" smooth={true} className="hidden 2xl:block">
               <li
-                // onClick={() => handleLinkClick("projects")}
                 className={`${
                   activeLink === "projects" ? backgroundColor : ""
-                } cursor-pointer rounded-full  p-2 px-3 duration-500  border-2 border-black hover:border-white`}
+                } cursor-pointer rounded-full  lg:p-2 lg:px-3 duration-500  border-2 p-1 px-2 border-black hover:border-white dark:border-white dark:hover:border-black`}
               >
                 Projects
               </li>
             </Link>
-            <Link to="contact" smooth={true}>
+            <Link to="contact" smooth={true} className="hidden 2xl:block">
               <li
-                // onClick={() => handleLinkClick("contact")}
                 className={`${
                   activeLink === "contact" ? backgroundColor : ""
-                } cursor-pointer rounded-full  p-2 px-3 duration-500  border-2 border-black hover:border-white`}
+                } cursor-pointer rounded-full  lg:p-2 lg:px-3 duration-500  border-2 p-1 px-2 border-black hover:border-white dark:border-white dark:hover:border-black`}
               >
                 Contact
               </li>
             </Link>
-            <li className="flex gap-4 px-2">
+            <li className="flex gap-4 px-1 md:px-2">
               <a
                 id="linkedin"
                 href="https://www.linkedin.com/in/crismagrata/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[#0073B2] duration-500 text-lg  cursor-pointer"
+                className="hover:text-[#0073B2] duration-500 text-lg  cursor-pointer "
               >
                 <BsLinkedin />
               </a>
@@ -142,19 +135,19 @@ const Header = () => {
                 href="https://github.com/magratacris"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-gray-500 duration-500 cursor-pointer text-lg"
+                className="hover:text-gray-500 duration-500 cursor-pointer text-lg  "
               >
                 <BsGithub />
               </a>
-              <a
-                id="resume"
-                href="https://github.com/magratacris"
-                rel="noopener noreferrer"
-                target="_blank"
-                className="hover:text-gray-500 duration-500 cursor-pointer text-lg"
-              >
-                <IoDocumentAttachOutline />
-              </a>
+              <div onClick={handleThemeSwitch}>
+                <DarkModeSwitch
+                  checked={isDarkMode}
+                  onChange={toggleDarkMode}
+                  size={25}
+                  moonColor="white"
+                  sunColor="black"
+                />
+              </div>
             </li>
           </ul>
         </nav>

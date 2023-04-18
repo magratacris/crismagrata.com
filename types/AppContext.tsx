@@ -1,4 +1,4 @@
-import { ReactNode, useRef } from "react";
+import { ReactNode } from "react";
 
 export type AppContextProps = {
   children?: ReactNode;
@@ -11,4 +11,7 @@ export interface ContextType {
     projects: React.RefObject<HTMLDivElement>;
     contact: React.RefObject<HTMLDivElement>;
   };
+  setDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
+  toggleDarkMode: (checked: boolean) => void;
+  isDarkMode: boolean;
 }
