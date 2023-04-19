@@ -14,4 +14,5 @@ export interface ContextType {
   setDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
   toggleDarkMode: (checked: boolean) => void;
   isDarkMode: boolean;
+  theme: String | null;
 }

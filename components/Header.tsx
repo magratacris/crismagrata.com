@@ -12,11 +12,7 @@ const Header = () => {
     "home" | "about" | "contact" | "projects"
   >("home");
   const [backgroundColor, setBackgroundColor] = useState("");
-  const { sectionRefs, isDarkMode, toggleDarkMode } = useAppContext();
-  const [theme, setTheme] = useState<String | null>(null);
-  const handleThemeSwitch = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
-  };
+  const { sectionRefs, isDarkMode, toggleDarkMode, theme } = useAppContext();
 
   useEffect(() => {
     if (theme === "dark") {
@@ -140,7 +136,7 @@ const Header = () => {
               >
                 <BsGithub />
               </a>
-              <div onClick={handleThemeSwitch} className="p-1">
+              <div className="p-1">
                 <DarkModeSwitch
                   checked={isDarkMode}
                   onChange={toggleDarkMode}

@@ -18,9 +18,9 @@
   {
     "name": "Portfolio",
     "git": "https://github.com/magratacris/crismagrata.com",
-    "live": "https://crismagrata.com",
+    "live": "https://crismagrata.dev",
     "desc": "My portfolio is a modern and stylish website that showcases my skills in design and creation. It features a striking color scheme with bold gradients and high contrast, making it both eye-catching and professional. The site creates a visually engaging experience for my visitors and includes my other works as well. My goal is to leave a lasting impression on anyone who visits.",
     "stack": "React, Nextjs, TypeScript, Tailwind",
-    "videoSrc": "https://drive.google.com/uc?export=download&id=1D8jzhy7Nl77mrmieZOqL8dUTg-i1Hr_J"
+    "videoSrc": "https://drive.google.com/uc?export=download&id=1MnEJleEGgTdT6RvDkUX40-AXVrEnwEnw"
   }
 ]
