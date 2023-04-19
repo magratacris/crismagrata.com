@@ -16,7 +16,7 @@ const About = () => {
     <div
       ref={sectionRefs.about}
       id="about"
-      className="max-w-[72rem] mx-auto h-[46rem] pt-5 flex gap-4 lg:py-10 xl:px-32 lg:flex-row flex-col px-2"
+      className="max-w-[72rem] mx-auto h-[46rem] 3xl:h-[60rem] pt-5 flex gap-4 lg:py-10 xl:px-32 lg:flex-row flex-col px-2"
     >
       <div className="flex order-2 lg-order-1  justify-center items-center lg:flex-1">
         <div className="w-[90%] ">
