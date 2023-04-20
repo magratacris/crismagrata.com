@@ -5,7 +5,7 @@
     "live": "https://cozyquarters.vercel.app/",
     "desc": "Cozy Quarters! a fully functional e-commerce website that features a modern and minimalist design that makes it easy for customers to navigate and shop hassle-free. With the ability to filter products by category and add items to your cart with just a few clicks, the website also includes a payment system using Stripe, ensuring a secure and seamless checkout process for customers. You can try it out!",
     "stack": "React, Nextjs, Sanity, Stripe, Tailwind",
-    "videoSrc": "https://drive.google.com/uc?export=download&id=1pRnqd8PyLJlS3z4q7nlD1TeFr8BDxlvV"
+    "videoSrc": "https://drive.google.com/uc?export=download&id=10FH0jcaF3kiID7foECnltXq19E1EclhI"
   },
   {
     "name": "ToDo list",
