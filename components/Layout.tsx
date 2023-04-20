@@ -6,11 +6,11 @@ import { LayoutProps } from "@/Interfaces/LayoutProps";
 
 const Layout: FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="layout relative">
+    <div>
       <Head>
         <title>Cris Magrata | Portfolio</title>
       </Head>
-      <main className="main-container">{children}</main>
+      <main>{children}</main>
     </div>
   );
 };

@@ -25,14 +25,16 @@ const ProjectsCard: React.FC<ProjectCardProps> = ({ projects, index }) => {
           onEnded={handleVideoEnded}
           muted
           className="rounded-md"
+          preload="metadata"
         >
           <source src={projects.videoSrc} type="video/mp4" />
           Sorry, your browser doesn't support embedded videos.
         </video>
+
         {!isButtonClicked && (
           <span
             onClick={handlePlayVideo}
-            className="absolute bottom-[39%] left-[38%] 2xl:bottom-[42%] 2xl:left-[41%] lg:bottom-[42%] lg:left-[41%] sm:bottom-[43%] sm:left-[44%] text-6xl cursor-pointer text-blue-200/80 "
+            className="absolute bottom-[39%] left-[38%] 2xl:bottom-[42%] 2xl:left-[41%] lg:bottom-[42%] lg:left-[41%] sm:bottom-[43%] sm:left-[44%] md:bottom-[42%] md:left-[40%] text-6xl cursor-pointer text-blue-200/80 "
           >
             <AiFillPlayCircle />
           </span>
