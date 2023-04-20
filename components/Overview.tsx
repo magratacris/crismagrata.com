@@ -6,14 +6,13 @@ import { BsArrowUpRight } from "react-icons/bs";
 
 const Overview = () => {
   return (
-    <div className="max-w-[72rem] mx-auto h-[35rem] flex gap-28 lg:gap-3 items-center px-4 lg:py-18 lg:flex-row flex-col ">
+    <div className="max-w-[72rem] mx-auto h-[35rem] flex gap-20 lg:gap-3 items-center px-4 lg:py-18 lg:flex-row flex-col ">
       <div className="flex  items-center justify-center lg:flex-1">
         <h1 className="lg:text-5xl max-w-72 text-3xl  sm:mb-10">
           A quick overview
         </h1>
       </div>
-
-      <div className=" flex flex-col gap-4 justify-center items-center lg:flex-1">
+      <div className=" flex flex-col gap-10 justify-center items-center lg:flex-1">
         <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 items-center w-full">
           <div className="border-2   p-2 lg:p-5 rounded-2xl">
             <Image
@@ -21,7 +20,7 @@ const Overview = () => {
               alt=""
               width={512}
               height={512}
-              className="h-11 w-11 sm:h- sm:h-16 sm:w-16"
+              className="h-16 w-16 "
             />
           </div>
           <div className="lg:w-80">
@@ -41,7 +40,7 @@ const Overview = () => {
               alt=""
               width={512}
               height={512}
-              className="h-11 w-11 sm:h-16 sm:w-16"
+              className="h-16 w-16"
             />
           </div>
           <div className="lg:w-80">
