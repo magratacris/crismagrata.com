@@ -23,7 +23,7 @@ module.exports = {
       },
       animation: {
         "wave-animation": "wave-animation 1s linear infinite",
-        gradient: "textShine 3s ease-in-out infinite alternate",
+        gradient: "textShine 2s ease-in-out infinite alternate",
       },
       keyframes: {
         "wave-animation": {
