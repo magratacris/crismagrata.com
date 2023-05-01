@@ -7,7 +7,10 @@ import {
   SiTypescript,
   SiReact,
   SiTailwindcss,
+  SiMongodb,
+  SiFirebase,
 } from "react-icons/si";
+import { BsDatabaseFillCheck } from "react-icons/bs";
 import { TbBrandNextjs } from "react-icons/tb";
 
 const About = () => {
@@ -40,7 +43,7 @@ const About = () => {
             </span>
           </p>
           <p className="text-xs sm:text-base mb-2">
-            The main area of my expertise are front-end like:
+            The main area of my expertise are:
           </p>
           <div className="grid grid-cols-2 grid-rows-3 gap-3 text-xs sm:text-base">
             <div className="flex items-center">
@@ -72,6 +75,24 @@ const About = () => {
                 <SiTailwindcss />
               </div>
               <span>Tailwind CSS</span>
+            </div>
+            <div className="flex items-center">
+              <div className="text-[#00D95C] mr-2">
+                <SiMongodb />
+              </div>
+              <span>MongoDB</span>
+            </div>
+            <div className="flex items-center">
+              <div className="text-[#E93C2E] mr-2">
+                <BsDatabaseFillCheck />
+              </div>
+              <span>Sanity.io</span>
+            </div>
+            <div className="flex items-center">
+              <div className="text-[#FFCA28] mr-2">
+                <SiFirebase />
+              </div>
+              <span>Firebase</span>
             </div>
           </div>
         </div>
