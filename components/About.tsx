@@ -9,6 +9,7 @@ import {
   SiTailwindcss,
   SiMongodb,
   SiFirebase,
+  SiApollographql
 } from "react-icons/si";
 import { BsDatabaseFillCheck } from "react-icons/bs";
 import { TbBrandNextjs } from "react-icons/tb";
@@ -93,6 +94,12 @@ const About = () => {
                 <SiFirebase />
               </div>
               <span>Firebase</span>
+            </div>
+            <div className="flex items-center">
+              <div className="text-white mr-2 dark:text-black">
+                <SiApollographql/>
+              </div>
+              <span>Apollo GraphQL</span>
             </div>
           </div>
         </div>
