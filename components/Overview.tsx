@@ -45,12 +45,10 @@ const Overview = () => {
           </div>
           <div className="lg:w-80">
             <h1 className="lg:text-xl text-xs text-center sm:text-start">
-              Certifications
+              Professional Experience
             </h1>
             <p className="text-xs text-gray-500 text-center sm:text-start sm:w-56">
-              Microsoft-certified IT Specialist in HTML and CSS and have
-              completed a total of 100-hour certifications in React, Next.js,
-              and Tailwind.
+            Junior Software Engineer (Remote) | 📌 Switzerland
             </p>
             <a
               href="https://www.linkedin.com/in/crismagrata/"
