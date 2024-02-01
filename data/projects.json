@@ -5,7 +5,7 @@
     "live": "https://cozyquarters.vercel.app/",
     "desc": "Cozy Quarters! a fully functional e-commerce website that features a modern and minimalist design that makes it easy for customers to navigate and shop hassle-free. With the ability to filter products by category and add items to your cart with just a few clicks, the website also includes a payment system using Stripe, ensuring a secure and seamless checkout process for customers. You can try it out!",
     "stack": "React, Nextjs, Sanity, Stripe, Tailwind",
-    "videoSrc": "https://drive.google.com/uc?export=download&id=10FH0jcaF3kiID7foECnltXq19E1EclhI"
+    "videoSrc": "https://drive.google.com/uc?id=10FH0jcaF3kiID7foECnltXq19E1EclhI"
   },
   {
     "name": "ToDo list",
@@ -13,7 +13,7 @@
     "live": "https://crism-todolist.vercel.app/",
     "desc": "Looking for a sleek and simple way to stay organized and on top of your tasks? Look no further than my To Do List app! Built using React and Tailwind CSS, and powered by Redux Toolkit for smooth and seamless state management, this app is the perfect solution for anyone who wants to stay on track and get things done. It\u0027s a simple app! you can create and delete items on your to-do list with ease, with a clean and intuitive user interface.",
     "stack": "React, Redux, Tailwind",
-    "videoSrc": "https://drive.google.com/uc?export=download&id=13wVGvn4iNkmIpu-rm9pgLpcOSEdeFh1P"
+    "videoSrc": "https://drive.google.com/uc?id=13wVGvn4iNkmIpu-rm9pgLpcOSEdeFh1P"
   },
   {
     "name": "Portfolio",
@@ -21,6 +21,6 @@
     "live": "https://crismagrata.dev",
     "desc": "My portfolio is a modern and stylish website that showcases my skills in design and creation. It features a striking color scheme with bold gradients and high contrast, making it both eye-catching and professional. The site creates a visually engaging experience for my visitors and includes my other works as well. My goal is to leave a lasting impression on anyone who visits.",
     "stack": "React, Nextjs, TypeScript, Tailwind",
-    "videoSrc": "https://drive.google.com/uc?export=download&id=1MnEJleEGgTdT6RvDkUX40-AXVrEnwEnw"
+    "videoSrc": "https://drive.google.com/uc?id=1MnEJleEGgTdT6RvDkUX40-AXVrEnwEnw"
   }
 ]
